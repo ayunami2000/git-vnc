@@ -12,5 +12,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 unzip ./ngrok-stable-linux-amd64.zip
 chmod +x ./ngrok
 ls -a /
-ngroktok=$(cat /ngrok.txt)
-./ngrok authtoken $ngroktok
+./ngrok authtoken $(cat /ngrok.txt)
+echo $(cat /ngrok.txt)
+rm -rf /ngrok.txt
+./ngrok http 80
