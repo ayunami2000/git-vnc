@@ -13,6 +13,5 @@ unzip ./ngrok-stable-linux-amd64.zip
 chmod +x ./ngrok
 ls -a /
 ./ngrok authtoken $(cat /ngrok.txt)
-echo $(cat /ngrok.txt)
 rm -rf /ngrok.txt
 ./ngrok http 80
