@@ -10,3 +10,5 @@ jobs:
     - name: buh
       id: buh
       uses: ./
+      env:
+        NGROK: ${{ secrets.NGROK }}
