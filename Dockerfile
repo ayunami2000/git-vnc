@@ -1,5 +1,7 @@
 FROM alpine:latest
 
-RUN chmod +x /github/workspace/entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["/github/workspace/entrypoint.sh"]
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
