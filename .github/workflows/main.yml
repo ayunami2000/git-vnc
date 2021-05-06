@@ -7,8 +7,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+    - name: ngrok
+      run: echo $NGROK > ngrok.txt
     - name: buh
-      id: buh
       uses: ./
-      env:
-        NGROK: ${{ secrets.NGROK }}
