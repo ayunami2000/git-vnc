@@ -3,8 +3,10 @@ on: [workflow_dispatch]
 jobs:
   runit:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: buh
     steps:
-    - name: Hello world action step
-      id: hello
-      uses: git-novnc/buh@v1
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: buh
+      id: buh
+      uses: ./
