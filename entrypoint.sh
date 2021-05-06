@@ -9,4 +9,4 @@ export DISPLAY=:0
 fluxbox &
 x11vnc -noshm -geometry 900x720 -shared -forever &
 npm i localtunnel
-node node_modules/localtunnel/bin/lt.js --port 80 &
+node node_modules/localtunnel/bin/lt.js --port 80
