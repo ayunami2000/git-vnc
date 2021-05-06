@@ -1,3 +1,4 @@
+#!/bin/ash
 apk update
 apk add xvfb fluxbox x11vnc build-base libx11-dev libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev mesa-dev mesa-dri-gallium xvfb-run
 apk add xterm
