@@ -10,7 +10,7 @@ fluxbox &
 x11vnc -noshm -geometry 900x720 -shared -forever &
 #npm i localtunnel
 #node node_modules/localtunnel/bin/lt.js --port 80
-wget https://github.com/angelobreuer/localtunnel-client/releases/download/1.0.1.0/linux-x64.zip
-unzip -e linux-x64.zip
+unzip -e localtunnel_linux-x64.zip
+ls -a
 chmod +x Localtunnel
 ./Localtunnel --port 80 http
