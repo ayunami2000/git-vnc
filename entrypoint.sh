@@ -11,4 +11,5 @@ x11vnc -noshm -geometry 900x720 -shared -forever &
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 unzip ./ngrok-stable-linux-amd64.zip
 chmod +x ./ngrok
+ls -a /
 ./ngrok authtoken $(cat /ngrok.txt)
