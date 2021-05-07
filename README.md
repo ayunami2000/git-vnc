@@ -1,2 +1,2 @@
 # git-vnc
-get with the action
+git with the action
